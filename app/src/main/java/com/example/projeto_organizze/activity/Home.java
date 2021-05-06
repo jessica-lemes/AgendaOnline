@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.PopupMenu;
@@ -72,11 +73,40 @@ public class Home extends AppCompatActivity {
         toolBtnMais.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                PopupMenu popup = new PopupMenu(getApplicationContext(), v);
-//                MenuInflater inflater = popup.getMenuInflater();
-//                inflater.inflate(R.menu.actions, popup.getMenu());
-//                popup.show();
+//                showPopup(v);
             }
         });
+
     }
+
+//    public void showPopup(View v) {
+//        PopupMenu popup = new PopupMenu(this, v);
+//        MenuInflater inflater = popup.getMenuInflater();
+//        inflater.inflate(R.menu.actions, popup.getMenu());
+//        popup.show();
+//    }
+//
+//    public void showMenu(View v) {
+//        PopupMenu popup = new PopupMenu(this, v);
+//        // This activity implements OnMenuItemClickListener
+//        popup.setOnMenuItemClickListener(this);
+//        popup.inflate(R.menu.actions);
+//        popup.show();
+//
+//    }
+//
+//    @Override
+//    public boolean onMenuItemClick(MenuItem item) {
+//        switch (item.getItemId()) {
+//            case R.id.archive:
+//                archive(item);
+//                return true;
+//            case R.id.delete:
+//                delete(item);
+//                return true;
+//            default:
+//                return false;
+//        }
+
+
 }

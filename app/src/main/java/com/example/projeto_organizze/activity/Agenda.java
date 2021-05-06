@@ -97,7 +97,7 @@ public class Agenda extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 String horarioSelecionado = spHorario.getItemAtPosition(position).toString(); //pego a informação e passo pra variavel horarioSelecionado
                 setHoraSelecionada(horarioSelecionado);
-                Toast.makeText(getApplicationContext(),horarioSelecionado, Toast.LENGTH_SHORT).show(); //Exibo num toast
+                //Toast.makeText(getApplicationContext(),horarioSelecionado, Toast.LENGTH_SHORT).show(); //Exibo num toast
             }
 
             @Override

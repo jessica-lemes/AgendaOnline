@@ -12,7 +12,7 @@ public class Usuario {
     private String email;
     private String senha;
     //private String[] reserva = {"Procedimento X - Dia Y - Horario Z"    };
-    private String reserva = "Procedimento X - Dia Y - Horario Z";
+    //private String reserva = "";
 
     public Usuario() {
     }
@@ -22,13 +22,13 @@ public class Usuario {
         firebase.child("usuarios").child(this.idUsuario).setValue(this);
     }
 
-    public String getReserva() {
-        return reserva;
-    }
-
-    public void setReserva(String reserva) {
-        this.reserva = reserva;
-    }
+//    public String getReserva() {
+//        return reserva;
+//    }
+//
+//    public void setReserva(String reserva) {
+//        this.reserva = reserva;
+//    }
 
     @Exclude
     public String getIdUsuario() { return idUsuario; }

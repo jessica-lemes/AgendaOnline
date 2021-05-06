@@ -118,7 +118,7 @@ public class CadastraUsuario extends AppCompatActivity {
                     usuario.salvar();
 
                     mensagem("Sucesso ao cadastrar usuário");
-                    Intent intent = new Intent(getApplicationContext(), Home.class);
+                    Intent intent = new Intent(getApplicationContext(), Login_.class);
                     startActivity(intent);
 
                 }else{
